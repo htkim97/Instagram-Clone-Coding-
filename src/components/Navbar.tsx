@@ -37,10 +37,10 @@ export default function Navbar() {
   return (
     <div className='flex items-center justify-between px-6'>
       <Link href='/'>
-        <h1 className='text-3xl font-bold'>hyeon'stargram</h1>
+        <h1 className='text-4xl font-bold'>Musical's Blog</h1>
       </Link>
       <nav>
-        <ul className='flex items-center gap-4 p-4'>
+        <ul className='flex items-center gap-6 p-4'>
           {menu.map((item) => (
             <li key={item.href}>
               <Link href={item.href}>

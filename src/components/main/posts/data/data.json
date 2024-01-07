@@ -1,0 +1,30 @@
+[
+    {
+        "id": "reve.webp",
+        "category": "Pizza",
+        "title": "레베카",
+        "pointOfInterest": 80,
+        "backgroundColor": "#814A0E"
+    },
+    {
+        "id": "smile.jpg",
+        "category": "Pizza",
+        "title": "웃는남자",
+        "pointOfInterest": 80,
+        "backgroundColor": "#814A0E"
+    },
+    {
+        "id": "reve.webp",
+        "category": "Pizza",
+        "title": "레베카",
+        "pointOfInterest": 80,
+        "backgroundColor": "#814A0E"
+    },
+    {
+        "id": "smile.jpg",
+        "category": "Pizza",
+        "title": "웃는남자",
+        "pointOfInterest": 80,
+        "backgroundColor": "#814A0E"
+    }
+]
