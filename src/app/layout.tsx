@@ -18,13 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={openSans.className}>
-      <body className='w-full mx-auto'>
+      <body className='w-full mx-auto max-w-screen-3xl'>
         <AuthContext>
           <header className='sticky top-0 z-10 bg-white border-b'>
             <Navbar />
           </header>
           <main className='grow'>{children}</main>
-          <Footer/>
+          {/* <Footer/> */}
         </AuthContext>
       </body>
     </html>
