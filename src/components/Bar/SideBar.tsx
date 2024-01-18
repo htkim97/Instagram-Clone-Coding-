@@ -1,6 +1,5 @@
 import { User } from "@/model/User"
-import Avatar from "./ui/Avatar"
-
+import Avatar from "../ui/Avatar"
 
 type Props = {
     user: User
@@ -8,12 +7,12 @@ type Props = {
 
 export default function SideBar({ user: { name, username, image } }: Props) {
     return (
-        <section className="h-screen p-4 shadow-md">
+        <section className="h-screen p-4 shadow-md bg-neutral-50">
 
             <div className="flex items-center">
                 {image && <Avatar image={image} />}
                 <div className="ml-4">
-                    <p className="font-bold">{username}</p>
+                    <p className="font-bold text-black">{username}</p>
                     <p className="text-lg text-neutral-500">{name}</p>
                 </div>
             </div>
