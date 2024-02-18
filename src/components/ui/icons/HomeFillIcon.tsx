@@ -1,5 +1,5 @@
-import { AiOutlineHome } from 'react-icons/ai';
+import { AiFillHome } from 'react-icons/ai';
 
 export default function HomeFillIcon() {
-  return <AiOutlineHome className='w-7 h-7 text-violet-500' />;
+  return <AiFillHome className='w-7 h-7' />;
 }

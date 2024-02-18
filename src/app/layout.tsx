@@ -1,9 +1,9 @@
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
-import Navbar from '@/components/Bar/Navbar';
+import Navbar from '@/components/Navbar';
 import AuthContext from '@/context/AuthContext';
-import Footer from '@/components/footer';
-import Panel from '@/components/main/panel/panel';
+import SWRConfigContext from '@/context/SWRConfigContext';
+
 const openSans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata = {
@@ -18,16 +18,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={openSans.className}>
-      <body className='w-full mx-auto max-w-screen-2xl'>
+      <body className='w-full max-w-screen-xl mx-auto overflow-auto'>
         <AuthContext>
           <header className='sticky top-0 z-10 bg-white border-b'>
             <Navbar />
           </header>
-            <Panel/>
           <main className='flex justify-center w-full min-h-full bg-neutral-50'>
-            {children}
+            <SWRConfigContext>
+              {children}
+            </SWRConfigContext>
           </main>
-          {/* <Footer/> */}
         </AuthContext>
       </body>
     </html>

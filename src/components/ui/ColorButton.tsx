@@ -8,7 +8,7 @@ type Props = {
 
 export default function ColorButton({ text, onClick, size = 'small' }: Props) {
   return (
-    <div className={`rounded-md bg-gradient-to-bl from-violet-300 via-violet-400 to-violet-500 p-[0.15rem] 
+    <div className={`rounded-md bg-gradient-to-bl from-fuchsia-600 via-rose-500 to-amber-300 p-[0.15rem] 
       ${size === 'big' ? 'p-[0.3rem]' : 'p-[0.15rem]'}`}>
 
       <button

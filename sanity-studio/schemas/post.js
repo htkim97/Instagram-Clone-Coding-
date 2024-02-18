@@ -32,8 +32,8 @@ export default {
       type: 'array',
       of: [
         {
-          title: 'Comment',
-          name: 'comment',
+          title: 'Comments',
+          name: 'comments',
           type: 'document',
           fields: [
             {
